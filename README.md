@@ -9,3 +9,9 @@ java -jar SpringBoot-0.0.1-SNAPSHOT.jar --spring.config.name=custom
 
 If you don't want to load the properties file on the classpath, well in production most of the time you are loading properties file from the file system, then do it as the following
 java -jar SpringBoot-0.0.1-SNAPSHOT.jar --spring.config.location=file:///Users/chenli/Desktop/production.properties
+
+Under windows environment, the following commands works
+file:///D:/Buffer/production.properties
+file:/D:/Buffer/production.properties
+file:////D:/Buffer/production.properties
+However, double slash doesn't work.
